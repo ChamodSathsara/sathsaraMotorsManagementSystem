@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signupPane" prefHeight="680.0" prefWidth="900.0" style="-fx-background-color: #c9ebea;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SathsaraMoters.controller.SignupFormController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="655.0" layoutX="-182.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest%20/photos/3wheel.jpg" />
+         </image>
+      </ImageView>
+      <Group layoutX="262.0" layoutY="61.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="567.0" layoutX="190.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rectangle1" width="400.0" />
+            <Label layoutX="226.0" layoutY="200.0" text="Signup" textFill="#9a9a9a">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAdminName" layoutX="284.0" layoutY="274.0" prefHeight="26.0" prefWidth="277.0" promptText="Admin Name">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtUserName" layoutX="284.0" layoutY="328.0" prefHeight="26.0" prefWidth="277.0" promptText="User Name">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtPassword" layoutX="283.0" layoutY="378.0" prefHeight="26.0" prefWidth="277.0" promptText="Password">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="224.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest%20/photos/icons8-male-user-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="225.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest%20/photos/icons8-male-user-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="57.0" layoutX="217.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest%20/photos/icons8-secure-50.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="251.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnSignUp" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #c9ebea;" text="Signup" textFill="#868585">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="169.0" fitWidth="177.0" layoutX="301.0" layoutY="22.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest%20/photos/logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtPassword1" layoutX="282.0" layoutY="431.0" prefHeight="26.0" prefWidth="277.0" promptText="Comfiirm Password">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <ImageView fitHeight="64.0" fitWidth="57.0" layoutX="216.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest%20/photos/icons8-secure-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" prefHeight="680.0" prefWidth="900.0" style="-fx-background-color: #c9ebea;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SathsaraMoters.controller.Login1FormController">
+   <children>
+      <ImageView fitHeight="561.0" fitWidth="712.0" layoutX="250.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest%20/photos/3wheel.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="603.0" layoutX="43.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="360.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaeef2" height="353.0" layoutX="59.0" layoutY="260.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="324.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="137.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest%20/photos/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="78.0" layoutY="278.0" text="Login" textFill="#6f6b6b">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="136.0" layoutY="364.0" prefHeight="26.0" prefWidth="231.0" promptText="User Name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <ImageView fitHeight="44.0" fitWidth="53.0" layoutX="78.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest%20/photos/icons8-male-user-50.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPassword" layoutX="135.0" layoutY="436.0" prefHeight="26.0" prefWidth="231.0" promptText="Password">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <ImageView fitHeight="59.0" fitWidth="74.0" layoutX="70.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest%20/photos/icons8-secure-50.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="70.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="26.0" prefWidth="297.0" style="-fx-background-color: #c9ebea;" text="Login" textFill="#8a8383">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="70.0" layoutY="556.0" mnemonicParsing="false" onAction="#btnSignup" prefHeight="26.0" prefWidth="297.0" style="-fx-background-color: #c9ebea;" text="Signup" textFill="#8a8383">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

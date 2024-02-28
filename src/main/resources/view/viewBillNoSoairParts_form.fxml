@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewBillNoSpairPartsPane" prefHeight="550.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SathsaraMoters.controller.ViewSpairPartFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9da1a4" height="47.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="361.0" />
+      <Label layoutX="112.0" layoutY="10.0" text="Spair Parts" textFill="#154c79">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleNumber" layoutX="247.0" layoutY="65.0" prefHeight="26.0" prefWidth="98.0" promptText="Vehicle" />
+      <TableView fx:id="tableAdingSpairPart" layoutX="17.0" layoutY="107.0" prefHeight="429.0" prefWidth="328.0">
+         <columns>
+            <TableColumn fx:id="columnSpairPartId" prefWidth="54.0" text="Id" />
+            <TableColumn fx:id="columnSpairPartName" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="columnAmount" prefWidth="93.0" text="amount" />
+            <TableColumn fx:id="columnqty" prefWidth="60.0" text="Qty" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtBillNumber" layoutX="80.0" layoutY="65.0" prefHeight="26.0" prefWidth="66.0" promptText="BillNo" />
+      <Label layoutX="19.0" layoutY="70.0" text="Bill No -">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="70.0" text="Vehicle No -">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

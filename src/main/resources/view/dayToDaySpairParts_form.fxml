@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dayToDayListPane" prefHeight="594.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SathsaraMoters.controller.DayToDaySpairPartsFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2bfbf" height="70.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="900.0" />
+      <Label layoutX="80.0" layoutY="27.0" text="Day to Day Purchase List Of Spair Parts" textFill="#154c79">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchbar" layoutX="50.0" layoutY="97.0" onAction="#txtSearchbarOnAction" prefHeight="26.0" prefWidth="456.0" promptText="Spair Part Id / Spair Part Name / Invoice No Or Supplier Name Here" />
+      <DatePicker fx:id="txtDate" layoutX="535.0" layoutY="97.0" promptText="Date Here" />
+      <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackOnAction" style="-fx-background-color: #c2bfbf;">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest%20/icons/icons8-left-32.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="765.0" layoutY="97.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #154c79;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="TableDaytoDayList" layoutX="16.0" layoutY="141.0" prefHeight="440.0" prefWidth="873.0">
+        <columns>
+          <TableColumn fx:id="ColumnSpairPartId" prefWidth="77.0" text="Id" />
+          <TableColumn fx:id="columnSpairPartName" prefWidth="109.0" text="Name" />
+            <TableColumn fx:id="ColumnInvoiceNumber" prefWidth="78.0" text="invoice" />
+            <TableColumn fx:id="columnDate" prefWidth="116.0" text="Date" />
+            <TableColumn fx:id="ColumnQty" prefWidth="41.0" text="Qty" />
+            <TableColumn fx:id="ColumnBuyingPrice" prefWidth="93.0" text="B Price" />
+            <TableColumn fx:id="columnSellingPrice" prefWidth="98.0" text="S Price" />
+            <TableColumn fx:id="ColumnSupplierNamed" prefWidth="106.0" text="Supplier" />
+            <TableColumn fx:id="columnPaymentMethod" prefWidth="73.0" text="method" />
+            <TableColumn fx:id="columnDeleteButtons" prefWidth="81.0" text="Delete" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
